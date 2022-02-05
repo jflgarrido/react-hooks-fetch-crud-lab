@@ -1,17 +1,6 @@
 {
   "questions": [
     {
-      "id": 1,
-      "prompt": "What special prop should always be included for lists of elements?",
-      "answers": [
-        "id",
-        "name",
-        "key",
-        "prop"
-      ],
-      "correctIndex": 2
-    },
-    {
       "id": 2,
       "prompt": "A React component is a function that returns ______.",
       "answers": [
@@ -76,28 +65,6 @@
       ],
       "correctIndex": 2,
       "id": 7
-    },
-    {
-      "prompt": "What is the capital of the Philippines?",
-      "answers": [
-        "Tokyo",
-        "Jakarta",
-        "Manila",
-        "Mindanao"
-      ],
-      "correctIndex": 2,
-      "id": 8
-    },
-    {
-      "prompt": "What is the capital of the Philippines?",
-      "answers": [
-        "Tokyo",
-        "Jakarta",
-        "Manila",
-        "Mindanao"
-      ],
-      "correctIndex": 2,
-      "id": 9
     }
   ]
 }

@@ -19,7 +19,7 @@ function QuestionForm(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    
+    console.log(typeof formData.correctIndex)
     fetch("http://localhost:4000/questions", {
       method: "POST",
       headers: {
@@ -33,13 +33,11 @@ function QuestionForm(props) {
           formData.answer3,
           formData.answer4
         ],
-        "correctIndex": parseInt(formData.correctIndex) 
+        "correctIndex": formData.correctIndex 
       })
     })
-    //.then(r => r.json())
-    //.then(data => console.log(data))
   }
-
+  
   return (
     <section>
       <h1>New Question</h1>

@@ -3,6 +3,13 @@ import QuestionItem from "./QuestionItem"
 
 function QuestionList() {
   const [questions, setQuestions] = useState([])
+
+  function handleDeleteQuestion(deletedQuestion){
+    const updatedQuestions = questions.filter((question) => {
+      return question.id === !deletedQuestion
+    })
+      setQuestions(updatedQuestions)
+  }
   
   useEffect(() => {
     fetch("http://localhost:4000/questions")
@@ -15,6 +22,7 @@ function QuestionList() {
       <QuestionItem 
         key={question.id} 
         question={question}
+        onDeleteQuestion={handleDeleteQuestion}
         />
     )
   })
